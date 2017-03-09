@@ -1,0 +1,125 @@
+/*
+Cody Webb
+CPII Midterm
+
+
+*/
+
+
+#include<stdio.h>
+#include<math.h>
+
+int main(int arcg, char *argv[])
+{
+
+	int num1, num2, ans, float fnum1, fnum2 ,fans;
+
+	if(argc==4)
+		{
+		sscanf(argv[1], "%f ",  fnum1);
+		sscanf(argv[2]"%c"  , op );
+		sscanf(argv[3]"%f" , fnum2 );
+		
+		
+		switch op
+			{
+				case '+':
+			
+				ans = fnum1 + fnum2;
+
+				printf("%f + %f = %f \n", fnum1, fnum2, fans);
+
+				break;
+		
+				case '-':
+			
+				ans = fnum1 - fnum2;
+			
+				printf(" %f - %f = %f \n ", fnum1 ,fnum2, fans);
+
+				break;
+			
+				case 'x' : 
+				ans = num1 * num2;
+			
+				printf(" %f x %f = %f \n", fnum1, fnum2, fans);
+			
+				break;
+				
+				
+ 
+				case '/' : 
+				ans = fnum1 / fnum2;
+				if(fnum2==0)
+					{
+					printf("Error. Division by Zero\n.");
+					else
+				printf(" %f / %f = %f \n" , fnum1, fnum2, fans);
+					}
+				break;
+				
+				default: printf(" Error, is not a valid operator!\n");
+				break;
+			}
+		}
+
+
+			
+				
+	
+		else if(argc==3)
+		{
+			sscanf(argv[2]"%f ",  fnum1);
+			sscanf(argv[1]"%c"  , op );
+			
+
+
+			switch op
+			{
+				case 'n':
+			
+				ans = fnum1 *(-1);
+
+				printf("the negation of %f is %f \n", fnum1, fans);
+
+				break;
+		
+				case 'a':
+			
+				ans = fabs(fnum1);
+			
+				printf(" the absolute value of %f is %f. \n "fnum1 , fans);
+
+				break;
+			
+				case 's' : 
+				ans = sqrt(fnum1);
+			
+				printf(" the Square root of %f is %f.", fnum1, ans);
+			
+				break;
+				
+				
+				default: printf(" Error, is not a valid operator!\n");
+				break;
+
+			}
+
+		}
+
+
+	else
+		{
+	printf("Error must provide correct number of inputs!"\n);
+		}
+
+return 0;	
+}
+
+
+
+
+
+
+
+
